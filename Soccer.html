@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap Link starts here-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Bootstrap link ends here-->
+    <!--CSS link starts here-->
+    <link rel="stylesheet" type="text/css" href="sports.css">
+    <!--CSS link ends here-->
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <!--Google fonts ends-->
+    <title>Soccer</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html">
+                <img src="pictures/Nena S Logo.jpg" alt="Logo" width="90" height="100">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Soccer.html">Soccer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Basketball.html">Basketball</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Football.html">Football</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar ends -->
+    <h2>&darr; Submit your <strong>soccer</strong> video here &darr;</h2>
+    <main>
+        <form id="formation" action="index.html" method="GET">
+            <h4>Your Information</h4>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <br>
+            <label for="tel">Phone Number</label>
+            <input type="tel" id="tel">
+            <br>
+
+            <input type="radio" id="team info" name="team info" label for="radio">Currently enrolled in a team</label>
+            <br>
+            <input type="radio" id="team info" name="team info" label for="radio">Looking for a team</label>
+            <br>
+
+            <legend><u>Position Played</u></legend>
+            <input type="checkbox" id="Goalkeeper" name="position" value="Goalkeeper" label
+                for="Goalkeeper">Goalkeeper</label>
+            <br>
+            <input type="checkbox" id="Defender" name="position" value="Defender" label for="Defender">Defender</label>
+            <br>
+            <input type="checkbox" id="Midfielder" name="position" value="Midfielder" label
+                for="Midfielder">Midfielder</label>
+            <br>
+            <input type="checkbox" id="Forward" name="position" value="Forward" label for="Forward">Forward</label>
+            <br>
+            <br>
+            <action="upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="fileToUpload" id="fileToUpload">
+
+                <div id="container">
+                    <input class="submit" type="submit" id="submit" value="Upload Your Talent">
+                </div>
+        </form>
+        <!--this is where the form ends-->
+    </main>
+
+</body>
+<div class="footer-basic">
+    <footer>
+        <div class="social"><a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a><a
+                href="https://www.snapchat.com/"><i class="icon ion-social-snapchat"></i></a><a
+                href="https://www.twitter.com/"><i class="icon ion-social-twitter"></i></a><a
+                href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <p class="copyright">Sports Club Company © 2021</p>
+    </footer>
+
+</html>

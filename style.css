@@ -1,3 +1,19 @@
+.navbar {
+  border: solid 3px black;
+}
+.navbar ul {
+  padding: 0;
+  margin: 0;
+ 
+}
+.navbar a {
+  width: 10%;
+  display:inline-block;
+  padding: 5px 5px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Akaya Kanadaka', cursive;
+}
 
 body {
     background-color: rgb(72, 172, 211)
@@ -16,9 +32,7 @@ h5 {
     font-family: 'Akaya Kanadaka', cursive;
     font-weight: 800;
 }
-.navbar {
-   font-family: 'Akaya Kanadaka', cursive;
-}
+
 img {
     border-radius: 8px;
   }
